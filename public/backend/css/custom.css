@@ -1,0 +1,448 @@
+.paging_full_numbers {
+    display: flex;
+    margin-top: 10px !important;
+}
+.table-topbar {
+    margin-bottom: 10px !important;
+}
+/* =========== settings css ============== */
+.settings-card-1 .profile-info .profile-image {
+    max-width: 75px;
+    width: 100%;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.settings-card-1 .profile-info .profile-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.settings-card-1 .profile-info .profile-image .update-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #efefef;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.settings-card-1 .profile-info .profile-image .update-image:hover {
+    opacity: 0.9;
+}
+
+.settings-card-1 .profile-info .profile-image .update-image input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.settings-card-1 .profile-info .profile-image .update-image label {
+    cursor: pointer;
+    z-index: 99;
+}
+
+/* ============== clients css ============ */
+.client-profile-wrapper {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.client-profile-wrapper .client-cover {
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    position: relative;
+    height: 160px;
+}
+
+.client-profile-wrapper .client-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.client-profile-wrapper .client-cover .update-image {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 1px 15px;
+    display: inline-block;
+    width: auto;
+    color: #1a2142;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.client-profile-wrapper .client-cover .update-image:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+    .client-profile-wrapper .client-cover .update-image {
+        right: 50%;
+        bottom: 50%;
+        -webkit-transform: translate(50%, 50%);
+        -moz-transform: translate(50%, 50%);
+        -ms-transform: translate(50%, 50%);
+        -o-transform: translate(50%, 50%);
+        transform: translate(50%, 50%);
+        white-space: nowrap;
+    }
+}
+
+.client-profile-wrapper .client-cover .update-image input {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.client-profile-wrapper .client-cover .update-image label {
+    z-index: 99;
+    cursor: pointer;
+}
+
+.client-profile-wrapper .client-cover .update-image label i {
+    margin-right: 10px;
+}
+
+.client-profile-wrapper .client-profile-photo {
+    position: relative;
+    margin-top: -80px;
+}
+
+@media (max-width: 767px) {
+    .client-profile-wrapper .client-profile-photo {
+        margin-top: -50px;
+    }
+}
+
+.client-profile-wrapper .client-profile-photo .image {
+    max-width: 170px;
+    width: 100%;
+    height: 170px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    border: 6px solid #fff;
+}
+
+@media (max-width: 767px) {
+    .client-profile-wrapper .client-profile-photo .image {
+        max-width: 120px;
+        height: 120px;
+    }
+}
+
+.client-profile-wrapper .client-profile-photo .image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.client-profile-wrapper .client-profile-photo .image .update-image {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #efefef;
+    color: #1a2142;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.client-profile-wrapper .client-profile-photo .image .update-image:hover {
+    opacity: 0.9;
+}
+
+.client-profile-wrapper .client-profile-photo .image .update-image input {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.client-profile-wrapper .client-profile-photo .image .update-image label {
+    z-index: 99;
+    cursor: pointer;
+}
+
+.client-profile-wrapper .client-info {
+    padding: 30px;
+}
+
+.client-profile-wrapper .client-info .socials {
+    display: flex;
+    align-items: center;
+}
+
+.client-profile-wrapper .client-info .socials li a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(239, 239, 239, 0.5);
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    color: #5d657b;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.client-profile-wrapper .client-info .socials li a:hover {
+    color: #fff;
+    background: #365cf5;
+    border-color: #365cf5;
+}
+
+.clients-table-card .dropdown-toggle {
+    border: none;
+    background: none;
+}
+
+.clients-table-card .dropdown-toggle::after {
+    display: none;
+}
+
+/* ============ Theme Change Css =============== */
+.darkTheme .client-profile-wrapper {
+    background: #14142d;
+}
+
+.darkTheme .client-profile-wrapper .client-info .socials li a {
+    background: rgba(26, 33, 66, 0.5);
+    border: 1px solid #3f4053;
+    color: #fff;
+}
+
+.darkTheme .client-profile-wrapper .client-info .socials li a:hover {
+    color: #fff;
+    background: #365cf5;
+    border-color: #365cf5;
+}
+
+/* ============ profile css ============= */
+.profile-wrapper {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.profile-wrapper .profile-cover {
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    position: relative;
+    height: 160px;
+}
+
+.profile-wrapper .profile-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-wrapper .profile-cover .update-image {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 1px 15px;
+    display: inline-block;
+    width: auto;
+    color: #1a2142;
+}
+
+@media (max-width: 767px) {
+    .profile-wrapper .profile-cover .update-image {
+        right: 50%;
+        bottom: 50%;
+        -webkit-transform: translate(50%, 50%);
+        -moz-transform: translate(50%, 50%);
+        -ms-transform: translate(50%, 50%);
+        -o-transform: translate(50%, 50%);
+        transform: translate(50%, 50%);
+        white-space: nowrap;
+    }
+}
+
+.profile-wrapper .profile-cover .update-image input {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.profile-wrapper .profile-cover .update-image label i {
+    margin-right: 10px;
+}
+
+.profile-wrapper .profile-photo {
+    position: relative;
+    margin-top: -80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 240px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .profile-wrapper .profile-photo {
+        margin-top: -50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.profile-wrapper .profile-photo .image {
+    max-width: 170px;
+    width: 100%;
+    height: 170px;
+    border-radius: 50%;
+    position: relative;
+    border: 6px solid #fff;
+}
+
+@media (max-width: 767px) {
+    .profile-wrapper .profile-photo .image {
+        max-width: 120px;
+        height: 120px;
+    }
+}
+
+.profile-wrapper .profile-photo .image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile-wrapper .profile-photo .image .update-image {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #efefef;
+    color: #1a2142;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-wrapper .profile-photo .image .update-image input {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.profile-wrapper .profiles-activities {
+    padding-right: 40px;
+}
+
+@media (max-width: 767px) {
+    .profile-wrapper .profiles-activities {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.profile-wrapper .profiles-activities .more-btn-wrapper button {
+    border: none;
+    background: none;
+}
+
+@media (max-width: 767px) {
+    .profile-wrapper .profiles-activities .more-btn-wrapper button {
+        display: none;
+    }
+}
+
+.profile-wrapper .profiles-activities .more-btn-wrapper button::after {
+    display: none;
+}
+
+.profile-wrapper .profile-info {
+    margin: 30px;
+    padding: 30px 0px;
+    border-top: 1px solid #efefef;
+}
+
+@media (max-width: 767px) {
+    .profile-wrapper .profile-info {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.profile-wrapper .profile-info p a:hover {
+    color: #365cf5 !important;
+}
+
+.profile-wrapper .profile-info .socials {
+    display: flex;
+    align-items: center;
+}
+
+.profile-wrapper .profile-info .socials li a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(239, 239, 239, 0.5);
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    color: #5d657b;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+    .profile-wrapper .profile-info .socials li a {
+        margin-right: 10px;
+    }
+}
+
+.profile-wrapper .profile-info .socials li a:hover {
+    color: #fff;
+    background: #365cf5;
+    border-color: #365cf5;
+}
+
+.settings-card-1 .profile-info .profile-image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
